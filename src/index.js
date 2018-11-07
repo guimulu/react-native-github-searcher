@@ -1,9 +1,10 @@
+import './config/ReactotronConfig';
 import React, { Component } from 'react';
-import './config/ReactoTronConfig';
 
 import { AsyncStorage, YellowBox } from 'react-native';
 
 import createNavigator from 'routes';
+
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
 
 export default class App extends Component {

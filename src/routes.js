@@ -4,12 +4,15 @@ import HeaderRight from 'components/HeaderRight';
 import Welcome from 'pages/welcome';
 import Repositories from 'pages/repositories';
 import Organizations from 'pages/organizations';
+import Profile from 'pages/profile';
+
 import { metrics, colors } from 'styles';
 
 const createNavigator = (isLogged = false) => StackNavigator({
   Welcome: { screen: Welcome },
   User: {
     screen: TabNavigator({
+      Profile: { screen: Profile },
       Repositories: { screen: Repositories },
       Organizations: { screen: Organizations },
     }, {
